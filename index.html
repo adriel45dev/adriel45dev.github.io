@@ -200,7 +200,7 @@
           type="button"
           data-drawer-hide="drawer-close"
           aria-controls="drawer-close"
-          class="text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center hover:bg-gray-600 hover:text-white"
+          class="trigger-profile text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center hover:bg-gray-600 hover:text-white"
         >
           <svg
             class="w-3 h-3"
@@ -279,7 +279,7 @@
           <h2 class="text-3xl font-bold mb-4">
             Adriel Alves
             <span
-              class="inline-flex items-center justify-center w-6 h-6 mr-2 text-sm font-semibold rounded-full bg-gray-700 text-gray-300 hover:bg-green-600 hover:scale-125"
+              class="trigger-profile inline-flex items-center justify-center w-6 h-6 mr-2 text-sm font-semibold rounded-full bg-gray-700 text-gray-300 hover:bg-green-600 hover:scale-125"
               id="toogle-profile"
             >
               <svg
@@ -472,131 +472,250 @@
         <div class="container mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div
-              class="project-cover rounded-lg hover:scale-105"
+              class="project-cover rounded-lg hover:scale-105 w-full h-full"
               style="
-                background-image: url('./assets/images/projects/project01.jpg');
+                background-image: url('./assets/images/projects/project01.webp');
               "
             >
               <div
-                class="bg-slate-900 rounded-lg p-4 shadow-lg bg-opacity-40 hover:bg-opacity-90"
+                class="bg-slate-900 rounded-lg p-4 shadow-lg bg-opacity-40 hover:bg-opacity-90 w-full h-full"
               >
-                <h3 class="text-lg text-white font-semibold mb-2">Projeto 1</h3>
-                <p class="text-white">Descrição do Projeto 1</p>
+                <h3 class="text-lg text-white font-semibold mb-2">
+                  MinimalistTODO
+                </h3>
+                <p class="text-white">
+                  Uma aplicação web minimalista para gerenciamento de tarefas.
+                </p>
 
                 <div class="flex mt-4">
                   <img
-                    src="./assets/images/technologies/react-icon.svg"
-                    class="h-6 mr-2"
+                    src="./assets/images/technologies/nextjs-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="Next.js"
                   />
                   <img
-                    src="./assets/images/technologies/javascript-icon.svg"
-                    class="h-6 mr-2"
+                    src="./assets/images/technologies/typescript-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="TypeScript"
                   />
                   <img
                     src="./assets/images/technologies/tailwind-icon.svg"
-                    class="h-6 mr-2"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="Tailwind CSS"
+                  />
+                  <img
+                    src="./assets/images/technologies/html-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="HTML5"
+                  />
+                  <img
+                    src="./assets/images/technologies/css-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="CSS3"
                   />
                 </div>
 
-                <a
-                  href="#"
-                  class="inline-block bg-sky-600 text-white px-4 py-2 mt-4 rounded-2xl"
-                  >Ver Projeto</a
-                >
+                <div class="flex flex-row gap-1">
+                  <a
+                    href="https://minimatodo.vercel.app/"
+                    class="inline-block bg-sky-600 text-white px-4 py-2 mt-4 rounded-2xl hover:bg-sky-700"
+                    >Ver Projeto</a
+                  >
+                  <a
+                    href="https://github.com/adriel45dev/mintodo"
+                    class="flex justify-center items-center bg-slate-700 text-white px-4 py-2 mt-4 rounded-2xl hover:bg-violet-800"
+                  >
+                    <img
+                      src="./assets/images/icons/github-icon.svg"
+                      alt="GitHub"
+                      class="w-5 h-5"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
+
             <div
               class="project-cover rounded-lg hover:scale-105"
               style="
-                background-image: url('./assets/images/projects/project02.jpg');
+                background-image: url('./assets/images/projects/project02.webp');
               "
             >
               <div
                 class="bg-slate-900 rounded-lg p-4 shadow-lg bg-opacity-40 hover:bg-opacity-90"
               >
-                <h3 class="text-lg font-semibold mb-2 text-white">Projeto 2</h3>
-                <p class="text-white">Descrição do Projeto 2</p>
+                <h3 class="text-lg text-white font-semibold mb-2">CDICalc</h3>
+                <p class="text-white">
+                  Calculadora de CDI desenvolvida com tecnologias web modernas
+                  para calcular retornos de investimentos pós-fixados.
+                </p>
 
                 <div class="flex mt-4">
                   <img
-                    src="./assets/images/technologies/vue-icon.svg"
-                    class="h-6 mr-2 hover:scale-150"
+                    src="./assets/images/technologies/nextjs-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="Next.js"
                   />
                   <img
-                    src="./assets/images/technologies/node-icon.svg"
-                    class="h-6 mr-2 hover:scale-150"
-                  />
-                </div>
-
-                <a
-                  href="#"
-                  class="inline-block bg-sky-600 text-white px-4 py-2 mt-4 rounded-2xl"
-                  >Ver Projeto</a
-                >
-              </div>
-            </div>
-            <div
-              class="project-cover rounded-lg hover:scale-105"
-              style="
-                background-image: url('./assets/images/projects/project01.jpg');
-              "
-            >
-              <div
-                class="bg-slate-900 rounded-lg p-4 shadow-lg bg-opacity-40 hover:bg-opacity-90"
-              >
-                <h3 class="text-lg text-white font-semibold mb-2">Projeto 1</h3>
-                <p class="text-white">Descrição do Projeto 1</p>
-
-                <div class="flex mt-4">
-                  <img
-                    src="./assets/images/technologies/react-icon.svg"
-                    class="h-6 mr-2"
-                  />
-                  <img
-                    src="./assets/images/technologies/javascript-icon.svg"
-                    class="h-6 mr-2"
+                    src="./assets/images/technologies/typescript-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="TypeScript"
                   />
                   <img
                     src="./assets/images/technologies/tailwind-icon.svg"
-                    class="h-6 mr-2"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="Tailwind CSS"
+                  />
+                  <img
+                    src="./assets/images/technologies/html-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="HTML5"
+                  />
+                  <img
+                    src="./assets/images/technologies/css-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="CSS3"
                   />
                 </div>
 
-                <a
-                  href="#"
-                  class="inline-block bg-sky-600 text-white px-4 py-2 mt-4 rounded-2xl"
-                  >Ver Projeto</a
-                >
+                <div class="flex flex-row gap-1">
+                  <a
+                    href="https://cdicalc.vercel.app/"
+                    class="inline-block bg-sky-600 text-white px-4 py-2 mt-4 rounded-2xl hover:bg-sky-700"
+                    >Ver Projeto</a
+                  >
+                  <a
+                    href="https://github.com/adriel45dev/cdicalc-app"
+                    class="flex justify-center items-center bg-slate-700 text-white px-4 py-2 mt-4 rounded-2xl hover:bg-violet-800"
+                  >
+                    <img
+                      src="./assets/images/icons/github-icon.svg"
+                      alt="GitHub"
+                      class="w-5 h-5"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
+
             <div
               class="project-cover rounded-lg hover:scale-105"
               style="
-                background-image: url('./assets/images/projects/project02.jpg');
+                background-image: url('./assets/images/projects/project03.webp');
               "
             >
               <div
                 class="bg-slate-900 rounded-lg p-4 shadow-lg bg-opacity-40 hover:bg-opacity-90"
               >
-                <h3 class="text-lg font-semibold mb-2 text-white">Projeto 2</h3>
-                <p class="text-white">Descrição do Projeto 2</p>
+                <h3 class="text-lg text-white font-semibold mb-2">WordLink</h3>
+                <p class="text-white">
+                  Uma plataforma online de aprendizado de idiomas com exercícios
+                  personalizados e gamificação.
+                </p>
 
                 <div class="flex mt-4">
                   <img
-                    src="./assets/images/technologies/vue-icon.svg"
-                    class="h-6 mr-2 hover:scale-150"
+                    src="./assets/images/technologies/javascript-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="JavaScript"
+                  />
+
+                  <img
+                    src="./assets/images/technologies/html-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="HTML5"
                   />
                   <img
-                    src="./assets/images/technologies/node-icon.svg"
-                    class="h-6 mr-2 hover:scale-150"
+                    src="./assets/images/technologies/css-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="CSS3"
+                  />
+                  <img
+                    src="./assets/images/technologies/bootstrap-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="Bootstrap"
                   />
                 </div>
 
-                <a
-                  href="#"
-                  class="inline-block bg-sky-600 text-white px-4 py-2 mt-4 rounded-2xl"
-                  >Ver Projeto</a
-                >
+                <div class="flex flex-row gap-1" id="wordlink">
+                  <a
+                    href="#wordlink"
+                    class="inline-block bg-sky-600 text-white px-4 py-2 mt-4 rounded-2xl hover:bg-sky-700"
+                    >Ver Projeto</a
+                  >
+                  <a
+                    href="https://github.com/adriel45dev/"
+                    class="flex justify-center items-center bg-slate-700 text-white px-4 py-2 mt-4 rounded-2xl hover:bg-violet-800"
+                  >
+                    <img
+                      src="./assets/images/icons/github-icon.svg"
+                      alt="GitHub"
+                      class="w-5 h-5"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="project-cover rounded-lg hover:scale-105"
+              style="
+                background-image: url('./assets/images/projects/project04.webp');
+              "
+            >
+              <div
+                class="bg-slate-900 rounded-lg p-4 shadow-lg bg-opacity-40 hover:bg-opacity-90"
+              >
+                <h3 class="text-lg text-white font-semibold mb-2">
+                  Horário Escolar
+                </h3>
+                <p class="text-white">
+                  Sistema de gerenciamento de horários escolares desenvolvido
+                  para organizar grade curricular, turmas, professores e
+                  recursos de forma eficiente.
+                </p>
+
+                <div class="flex mt-4">
+                  <img
+                    src="./assets/images/technologies/javascript-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="JavaScript"
+                  />
+
+                  <img
+                    src="./assets/images/technologies/html-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="HTML5"
+                  />
+                  <img
+                    src="./assets/images/technologies/css-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="CSS3"
+                  />
+                  <img
+                    src="./assets/images/technologies/bootstrap-icon.svg"
+                    class="h-6 mr-2 hover:scale-125"
+                    alt="Bootstrap"
+                  />
+                </div>
+
+                <div class="flex flex-row gap-1">
+                  <a
+                    href="https://iema.netlify.app/"
+                    class="inline-block bg-sky-600 text-white px-4 py-2 mt-4 rounded-2xl hover:bg-sky-700"
+                    >Ver Projeto</a
+                  >
+                  <a
+                    href="https://github.com/adriel45dev/iema-horario"
+                    class="flex justify-center items-center bg-slate-700 text-white px-4 py-2 mt-4 rounded-2xl hover:bg-violet-800"
+                  >
+                    <img
+                      src="./assets/images/icons/github-icon.svg"
+                      alt="GitHub"
+                      class="w-5 h-5"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -659,7 +778,7 @@
           id="btn-about"
           data-tooltip-target="tooltip-about"
           type="button"
-          class="p-2.5 bg-gray-100 group rounded-full mr-4 md:mr-0 hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800"
+          class="trigger-profile p-2.5 bg-gray-100 group rounded-full mr-4 md:mr-0 hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800"
         >
           <img
             src="./assets/images/icons/profile-icon.svg"
